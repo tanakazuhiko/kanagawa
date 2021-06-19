@@ -1,0 +1,618 @@
+@charset "utf-8";
+
+.desc{
+  position:absolute;
+  top:30px;
+  left:20px;
+  font-size:20px;
+  color:rgba(255,255,255,1.0);
+  z-index:2;
+}
+.desc3{
+  width: 100%;
+  border-collapse: collapse;
+  cursor: default;
+  z-index:2;
+}
+.map{
+  position:absolute;
+  top:100px;
+  left:300px;
+}
+.legend{
+  position:absolute;
+  bottom:30px;
+  left:24%;
+  font-size:16px;
+  z-index:2;
+  cursor: default;
+}
+.full2{
+  position:relative;
+  width:4000px;
+  height:100%;
+  overflow: scroll;
+  margin-left: 30px;
+}
+.slide{
+  background-attachment: fixed;
+  width:100%;
+  height:100%;
+  position: relative;
+  /*box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);*/
+}
+.title{
+  margin-left:14px;
+  float:left;
+  font-size:20px;
+  line-height:100px;
+}
+.active{
+  color:#2a4073;
+  font-weight: bold;
+}
+.red{
+  color:#d7003a;
+}
+.red2{
+  color:red !IMPORTANT;
+  font-weight: bold;
+}
+.white{
+  color:#ffffff;
+}
+.black{
+  color:#000000;
+}
+.disable{
+  background-color: #eee;
+}
+.bold{
+  font-weight: bold;
+}
+.chart{
+  position:absolute;
+  width: 90%;
+  left: 100px;
+  z-index:1;
+}
+.chart2{
+  position:absolute;
+  width: 72%;
+  max-height: 80%;
+  left: 280px;
+  z-index:1;
+  margin-top: 20px;
+}
+.chart3{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  z-index:1;
+  margin-top: 20px;
+}
+.highlight {
+  background: #f2f2b0;
+}
+.right{
+  text-align: right;
+}
+.chartjs-tooltip {
+  opacity: 0;
+  position: absolute;
+  /*background: rgba(0, 0, 0, .7);*/
+  /*color: white;*/
+  padding: 3px;
+  /*border-radius: 3px;*/
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.slideno{
+  font-size:65px;
+  color: #4F9426;
+  position:absolute;
+  top:20px;
+  left:20px;
+  /*text-shadow: 5px 5px 1px rgba(0,0,0,0.6);*/
+}
+.slideno_top{
+  position:absolute;
+  top:25px;
+  left:0px;
+  font-size:100px;
+  font-weight:bold;
+  color:rgba(255,255,255,1.0);
+}
+.parallaxbg{
+  position:absolute;
+  right:40px;
+  top:20px;
+  font-size:30px;
+  color:rgba(255,255,255,1.0);
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+}
+.col-md-2 {
+  width: 19%;
+  height: 48%;
+  float: left;
+  margin-left: 10px;
+}
+.col-md-4 {
+  /*width: 30.0%;*/
+  width: 400px;
+  height: 90%;
+  float: left;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.middle{
+  height: 100%;
+  vertical-align: middle;
+}
+.people {
+  position:absolute;
+  /*width: 100%;*/
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.center{
+  position:absolute;
+  /*top: ;*/
+  left: 0%;
+  /*width: 100%;*/
+}
+.table{
+  position:absolute;
+  top: 20px;
+  left: 20px;
+}
+.table1 {
+  border-collapse: collapse; /* 枠線の表示方法 */
+  border: 1px #b0b0b0 solid; /* テーブル全体の枠線（太さ・色・スタイル） */
+}
+.table1 td {
+  width: 100px; /* テーブルの横幅 */
+  border: 1px #b0b0b0 solid; /* セルの枠線（太さ・色・スタイル） */
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150%;
+}
+.icon {
+  border: 5px solid #ebebeb;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  margin-top: 10px;
+}
+.100vh{
+  height: 100vh;
+}
+.f14{
+  font-size: 14pt !IMPORTANT;
+}
+.f12{
+  font-size: 12pt !IMPORTANT;
+}
+.f10{
+  font-size: 10pt !IMPORTANT;
+}
+.color_jimin{
+  background-color: #c7d1f1
+}
+.color_minshin{
+  background-color: #ead4aa
+}
+.color_title{
+  background-color: #ebebeb;
+  font-weight: bold;
+  width: 100px !IMPORTANT;
+}
+.sansei{
+  color: #f19287
+}
+.hantai{
+  color: #6e8195
+}
+.link{
+  color: #4682b4;
+  text-decoration: none;
+}
+/******************************
+btnList
+*******************************/
+.btnList li {
+  float: left;
+  width: 90px;
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: default;
+  color: #fff;
+  list-style: none;
+  opacity: 0.4;
+}
+.btnList .自民党 {
+  background-color: #3B4A83;
+}
+.btnList .公明党 {
+  background-color: #6592C0;
+}
+.btnList .日本維新の会 {
+  background-color: #839311;
+}
+.btnList .民主党 {
+  background-color: #A5292A;
+}
+.btnList .みんなの党 {
+  background-color: #D06800;
+}
+.btnList .共産党 {
+  background-color: #835AA1;
+}
+.btnList .社民党 {
+  background-color: #A2A399;
+}
+.btnList .on {
+  opacity: 1;
+  z-index: 1;
+}
+.btnList .pointer {
+  cursor: pointer;
+}
+.bottom{
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+  left: 280px;
+  cursor: default;
+}
+.bottom2{
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+  left: 280px;
+}
+.bottom3{
+  position:absolute;
+  bottom:-25px;
+  left:28%;
+  font-size:14px;
+  z-index:2;
+}
+.bottom4{
+  position:absolute;
+  bottom:10px;
+  left:20px;
+  font-size:14px;
+  z-index:2;
+}
+/******************************
+slide
+*******************************/
+#slide0{
+  background-image:url(../images/map2.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide1{
+  background-color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide2{
+  background-color: #fdeff2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide3{
+  background-color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide4{
+  background-color: #fdeff2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide5{
+  background-color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide6{
+  background-color: #fdeff2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide7{
+  background-color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide8{
+  background-color: #fdeff2;
+  width:4000px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide9{
+  background-color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide10{
+  background-color: #fdeff2;
+  width:4000px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide11{
+  background-image:url(../images/vote.jpg);
+  background-position: center !IMPORTANT;
+  background-repeat: no-repeat;
+  background-size:1023px 457px;
+  width: 100%;
+}
+/******************************
+pagetop
+*******************************/
+@media screen and (max-width: 480px) {
+  #pagetop {
+    z-index: 2000;
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: #eeeeee;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.40;
+    -khtml-opacity: 0.40;
+    opacity: 0.40;
+    width: 50px;
+  }
+}
+@media screen and (min-width: 481px) {
+  #pagetop {
+    z-index: 2000;
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: #eeeeee;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.40;
+    -khtml-opacity: 0.40;
+    opacity: 0.40;
+    width: 65px;
+  }
+}
+#pagetop img {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+/******************************
+accordian
+*******************************/
+.accordion {
+  position:absolute;
+  width: 100%;
+  /*height: 100%;*/
+  height: 350px;
+  top: 25%;
+  /*max-width: 1080px;*/
+  overflow: hidden;
+  /*margin: 50px auto;*/
+}
+.accordion ul {
+  width: 100%;
+  /*height: 100%;*/
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 11.111%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.accordion ul li div a {
+  display: block;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 190px;
+}
+.accordion ul li div a p {
+  top: 190px;
+  font-size: 18px;
+}
+.accordion ul li:nth-child(1) {
+  background-image: url("../images/mori.png");
+}
+.accordion ul li:nth-child(2) {
+  background-image: url("../images/asaka.png");
+}
+.accordion ul li:nth-child(3) {
+  background-image: url("../images/mayama.png");
+}
+.accordion ul li:nth-child(4) {
+  background-image: url("../images/kaneko.png");
+}
+.accordion ul li:nth-child(5) {
+  background-image: url("../images/niwa.png");
+}
+.accordion ul li:nth-child(6) {
+  background-image: url("../images/iki.png");
+}
+.accordion ul li:nth-child(7) {
+  background-image: url("../images/nakanishi.png");
+}
+.accordion ul li:nth-child(8) {
+  background-image: url("../images/miura.png");
+}
+.accordion ul li:nth-child(9) {
+  background-image: url("../images/mihara.png");
+}
+.accordion ul:hover li { width: 8%; }
+.accordion ul:hover li:hover { width: 60%; }
+.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+@media screen and (max-width: 600px) {
+  body { margin: 0; }
+  .accordion { height: auto; }
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+/******************************
+common
+*******************************/
+html,body{
+  font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  width:100%;
+  height:100%;
+}
+a{
+  color: white;
+}
+p {
+  color:black;
+  width:200px;
+}
+h1 {
+  font-size:65px;
+  color:#4F9426;
+  width:200px;
+  margin-left:30px;
+  /*margin-top: 100px;*/
+  text-align: center;
+  vertical-align: middle;
+  /*text-align: justify;*/
+}
+h3 {
+  position:absolute;
+  font-size:16px;
+  color:#000000;
+  width:100%;
+  left:200px;
+}
+canvas {
+  width: 100%;
+  margin-top:50px;
+  margin-left:0px;
+}
+th{
+  /*width: 25%;*/
+  font-size:14px;
+  padding: 4px;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #b9b9b9;
+}
+td {
+  padding: 2px;
+  font-size:14px;
+  background-color: #fff;
+  border: 1px solid #b9b9b9;
+  color: #333;
+  /*white-space: nowrap;*/
+}

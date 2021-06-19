@@ -1,0 +1,823 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>参院選神奈川選挙区2016</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/lity.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/pararax.js"></script>
+  <script type="text/javascript" src="js/chart.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/lity.js"></script>
+  <script type="text/javascript" src="js/imgpreview.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0/Chart.js"></script>
+</head>
+<body>
+  <!-- pagetop -->
+  <div id="pagetop" style="display: block;">
+    <img src="images/arrowtop.png" class="cnr" data-pin-nopin="true">
+  </div>
+
+  <!-- top -->
+  <div class="slide" id="slide0" data-slide="0" data-stellar-background-ratio="0">
+    <span class="desc" data-stellar-ratio="2.0" data-stellar-vertical-offset="-50">
+      <article>
+        <h1>参院選神奈川選挙区2016</h1>
+      </article>
+    </span>
+    <span class="map" data-stellar-ratio="0.8" data-stellar-vertical-offset="-40">
+      <img src="images/japan.png">
+    </span>
+  </div>
+
+  <!-- #1. 2004 -->
+  <div class="slide" id="slide1" data-slide="1"	data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <h1>2004</h1>
+        <table class="desc3">
+          <tr>
+            <th>氏名</th>
+            <th>政党</th>
+            <th>得票数</th>
+            <th>%</th>
+          </tr>
+          <tr class="2004" id="2004_0" data-name-2004="小泉あきお" data-image="">
+            <td class="active">小泉あきお</td>
+            <td class="active">自民・当</td>
+            <td class="right active">1,217,100</td>
+            <td class="right active">17.4</td>
+          </tr>
+          <tr class="2004" id="2004_1" data-name-2004="あさお慶一郎" data-image="">
+            <td class="active">あさお慶一郎</td>
+            <td class="active">民主・当</td>
+            <td class="right active">856,504</td>
+            <td class="right active">12.2</td>
+          </tr>
+          <tr class="2004" id="2004_2" data-name-2004="ちば景子" data-image="">
+            <td class="active">ちば景子</td>
+            <td class="active">民主・当</td>
+            <td class="right active">843,759</td>
+            <td class="right active">12.0</td>
+          </tr>
+          <tr class="2004" id="2004_3" data-name-2004="はたの君枝">
+            <td>はたの君枝</td>
+            <td>共産</td>
+            <td class="right">397,660</td>
+            <td class="right">5.7</td>
+          </tr>
+          <tr class="2004" id="2004_4" data-name-2004="上田けい子">
+            <td>上田けい子</td>
+            <td>社民</td>
+            <td class="right">254,944</td>
+            <td class="right">3.6</td>
+          </tr>
+          <tr class="2004" id="2004_5" data-name-2004="まなべ一">
+            <td>まなべ一</td>
+            <td>無</td>
+            <td class="right">71,170</td>
+            <td class="right">1.0</td>
+          </tr>
+          <tr class="2004" id="2004_6" data-name-2004="川久保 勲">
+            <td>川久保 勲</td>
+            <td>諸派</td>
+            <td class="right">22,275</td>
+            <td class="right">0.3</td>
+          </tr>
+          <tr class="2004" id="2004_7" data-name-2004="棄権">
+            <td class="disable">棄権</td>
+            <td class="disable"></td>
+            <td class="right disable">3,190,255</td>
+            <td class="right disable">45.5</td>
+          </tr>
+          <tr class="2004" id="2004_8" data-name-2004="無効">
+            <td class="disable">無効</td>
+            <td class="disable"></td>
+            <td class="right disable">154,475</td>
+            <td class="right disable">2.2</td>
+          </tr>
+          <tr>
+            <td class="bold red">有権者数</td>
+            <td></td>
+            <td class="right bold red">7,008,142</td>
+            <td class="right bold red">100.0</td>
+          </tr>
+        </table>
+      </article>
+    </div>
+    <div class="chart">
+      <canvas id="chart_2004"></canvas>
+      <div class="chartjs-tooltip" id="chartjs-tooltip_2004"></div>
+    </div>
+    <div class="legend">
+      <ul class="clearfix btnList">
+        <li class="自民党 on">自民党</li>
+        <li class="公明党">公明党</li>
+        <li class="日本維新の会">維新の会</li>
+        <li class="みんなの党">みんなの党</li>
+        <li class="民主党 on">民主党</li>
+        <li class="共産党">共産党</li>
+        <li class="社民党">社民党</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /#1. 2004 -->
+
+  <!-- #2. 2007 -->
+  <div class="slide" id="slide2" data-slide="2"	data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <h1>2007</h1>
+        <div>
+          <table class="desc3">
+            <tr>
+              <th>氏名</th>
+              <th>政党</th>
+              <th>得票数</th>
+              <th>%</th>
+            </tr>
+            <tr class="2007" id="2007_0" data-name-2007="牧山ひろえ" data-image="">
+              <td class="active">牧山ひろえ</td>
+              <td class="active">民主・当</td>
+              <td class="right active">1,010,866</td>
+              <td class="right active">14.1</td>
+            </tr>
+            <tr class="2007" id="2007_1" data-name-2007="小林ゆたか" data-image="">
+              <td class="active">小林ゆたか</td>
+              <td class="active">自民・当</td>
+              <td class="right active">895,752</td>
+              <td class="right active">12.5</td>
+            </tr>
+            <tr class="2007" id="2007_2" data-name-2007="水戸まさし" data-image="">
+              <td class="active">水戸まさし</td>
+              <td class="active">民主・当</td>
+              <td class="right active">781,533</td>
+              <td class="right active">10.9</td>
+            </tr>
+            <tr class="2007" id="2007_3" data-name-2007="松あきら">
+              <td>松あきら</td>
+              <td>公明</td>
+              <td class="right">691,842</td>
+              <td class="right">9.6</td>
+            </tr>
+            <tr class="2007" id="2007_4" data-name-2007="はたの君枝">
+              <td>はたの君枝</td>
+              <td>共産</td>
+              <td class="right">385,619</td>
+              <td class="right">5.4</td>
+            </tr>
+            <tr class="2007" id="2007_5" data-name-2007="和田しげる">
+              <td>和田しげる</td>
+              <td>社民</td>
+              <td class="right">128,757</td>
+              <td class="right">1.8</td>
+            </tr>
+            <tr class="2007" id="2007_6" data-name-2007="斉藤さちこ">
+              <td>斉藤さちこ</td>
+              <td>国民</td>
+              <td class="right">61,219</td>
+              <td class="right">0.9</td>
+            </tr>
+            <tr class="2007" id="2007_7" data-name-2007="溝口 敏盛">
+              <td>溝口 敏盛</td>
+              <td>新風</td>
+              <td class="right">21,645</td>
+              <td class="right">0.3</td>
+            </tr>
+            <tr class="2007" id="2007_8" data-name-2007="棄権">
+              <td class="disable">棄権</td>
+              <td class="disable"></td>
+              <td class="right disable">3,137,533</td>
+              <td class="right disable">43.7</td>
+            </tr>
+            <tr class="2007" id="2007_9" data-name-2007="無効">
+              <td class="disable">無効</td>
+              <td class="disable"></td>
+              <td class="right disable">68,881</td>
+              <td class="right disable">1.0</td>
+            </tr>
+            <tr>
+              <td class="bold red">有権者数</td>
+              <td></td>
+              <td class="right bold red">7,183,647</td>
+              <td class="right bold red">100.0</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    </div>
+    <div class="chart">
+      <canvas id="chart_2007"></canvas>
+      <div class="chartjs-tooltip" id="chartjs-tooltip_2007"></div>
+    </div>
+    <div class="legend">
+      <ul class="clearfix btnList">
+        <li class="自民党 on">自民党</li>
+        <li class="公明党">公明党</li>
+        <li class="日本維新の会">維新の会</li>
+        <li class="みんなの党">みんなの党</li>
+        <li class="民主党 on">民主党</li>
+        <li class="共産党">共産党</li>
+        <li class="社民党">社民党</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /#3. 2007 -->
+
+  <!-- #3. 2010 -->
+  <div class="slide" id="slide3" data-slide="3"	data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <h1>2010</h1>
+        <div>
+          <table class="desc3">
+            <tr>
+              <th>氏名</th>
+              <th>政党</th>
+              <th>得票数</th>
+              <th>%</th>
+            </tr>
+            <tr class="2010" id="2010_0" data-name-2010="小泉あきお" data-image="">
+              <td class="active">小泉あきお</td>
+              <td class="active">自民・当</td>
+              <td class="right active">982,220</td>
+              <td class="right active">13.5</td>
+            </tr>
+            <tr class="2010" id="2010_1" data-name-2010="中西けんじ" data-image="">
+              <td class="active">中西けんじ</td>
+              <td class="active">みんな・当</td>
+              <td class="right active">788,729</td>
+              <td class="right active">10.8</td>
+            </tr>
+            <tr class="2010" id="2010_2" data-name-2010="かねこ洋一" data-image="">
+              <td class="active">かねこ洋一</td>
+              <td class="active">民主・当</td>
+              <td class="right active">745,143</td>
+              <td class="right active">10.2</td>
+            </tr>
+            <tr class="2010" id="2010_3" data-name-2010="ちば景子">
+              <td>ちば景子</td>
+              <td>民主</td>
+              <td class="right">696,739</td>
+              <td class="right">9.6</td>
+            </tr>
+            <tr class="2010" id="2010_4" data-name-2010="はたの君枝">
+              <td>はたの君枝</td>
+              <td>共産</td>
+              <td class="right">304,059</td>
+              <td class="right">4.2</td>
+            </tr>
+            <tr class="2010" id="2010_5" data-name-2010="木村えい子">
+              <td>木村えい子</td>
+              <td>社民</td>
+              <td class="right">113,712</td>
+              <td class="right">1.6</td>
+            </tr>
+            <tr class="2010" id="2010_6" data-name-2010="甲斐たかひろ">
+              <td>甲斐たかひろ</td>
+              <td>新党</td>
+              <td class="right">113,453</td>
+              <td class="right">1.6</td>
+            </tr>
+            <tr class="2010" id="2010_7" data-name-2010="松田まなぶ">
+              <td>松田まなぶ</td>
+              <td>たちあがれ</td>
+              <td class="right">76,792</td>
+              <td class="right">1.1</td>
+            </tr>
+            <tr class="2010" id="2010_8" data-name-2010="棄権">
+              <td class="disable">棄権</td>
+              <td class="disable"></td>
+              <td class="right disable">3,241,618</td>
+              <td class="right disable">44.4</td>
+            </tr>
+            <tr class="2010" id="2010_9" data-name-2010="無効">
+              <td class="disable">無効</td>
+              <td class="disable"></td>
+              <td class="right disable">154,216</td>
+              <td class="right disable">2.1</td>
+            </tr>
+            <tr>
+              <td class="bold red">有権者数</td>
+              <td></td>
+              <td class="right bold red">7,294,561</td>
+              <td class="right bold red">100.0</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    </div>
+    <div class="chart">
+      <canvas id="chart_2010"></canvas>
+      <div class="chartjs-tooltip" id="chartjs-tooltip_2010"></div>
+    </div>
+    <div class="legend">
+      <ul class="clearfix btnList">
+        <li class="自民党 on">自民党</li>
+        <li class="公明党">公明党</li>
+        <li class="日本維新の会">維新の会</li>
+        <li class="みんなの党 on">みんなの党</li>
+        <li class="民主党 on">民主党</li>
+        <li class="共産党">共産党</li>
+        <li class="社民党">社民党</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /#3. 2010 -->
+
+  <!-- #4. 2013 -->
+  <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <h1>2013</h1>
+        <div>
+          <table class="desc3">
+            <tr>
+              <th>氏名</th>
+              <th>政党</th>
+              <th>得票数</th>
+              <th>%</th>
+            </tr>
+            <tr class="2013" id="2013_0" data-name-2013="島村 大" data-image="">
+              <td class="active">島村 大</td>
+              <td class="active">自民・当</td>
+              <td class="right active">1,130,652</td>
+              <td class="right active">15.4</td>
+            </tr>
+            <tr class="2013" id="2013_1" data-name-2013="松沢しげふみ" data-image="">
+              <td class="active">松沢しげふみ</td>
+              <td class="active">みんな・当</td>
+              <td class="right active">740,207</td>
+              <td class="right active">10.1</td>
+            </tr>
+            <tr class="2013" id="2013_2" data-name-2013="佐々木さやか" data-image="">
+              <td class="active">佐々木さやか</td>
+              <td class="active">公明・当</td>
+              <td class="right active">629,662</td>
+              <td class="right active">8.5</td>
+            </tr>
+            <tr class="2013" id="2013_3" data-name-2013="牧山ひろえ" data-image="">
+              <td class="active">牧山ひろえ</td>
+              <td class="active">民主・当</td>
+              <td class="right active">461,006</td>
+              <td class="right active">6.3</td>
+            </tr>
+            <tr class="2013" id="2013_4" data-name-2013="はたの君枝">
+              <td>はたの君枝</td>
+              <td>共産</td>
+              <td class="right">444,955</td>
+              <td class="right">6.0</td>
+            </tr>
+            <tr class="2013" id="2013_5" data-name-2013="水戸まさし">
+              <td>水戸まさし</td>
+              <td>維新</td>
+              <td class="right">242,462</td>
+              <td class="right">3.3</td>
+            </tr>
+            <tr class="2013" id="2013_6" data-name-2013="つゆき順一">
+              <td>つゆき順一</td>
+              <td>みどり</td>
+              <td class="right">119,633</td>
+              <td class="right">1.6</td>
+            </tr>
+            <tr class="2013" id="2013_7" data-name-2013="木村えい子">
+              <td>木村えい子</td>
+              <td>社民</td>
+              <td class="right">76,792</td>
+              <td class="right">1.0</td>
+            </tr>
+            <tr class="2013" id="2013_8" data-name-2013="棄権">
+              <td class="disable">棄権</td>
+              <td class="disable"></td>
+              <td class="right disable">3,353,142</td>
+              <td class="right disable">45.5</td>
+            </tr>
+            <tr class="2013" id="2013_9" data-name-2013="無効">
+              <td class="disable">無効</td>
+              <td class="disable"></td>
+              <td class="right disable">84,790</td>
+              <td class="right disable">1.2</td>
+            </tr>
+            <tr>
+              <td class="bold red">有権者数</td>
+              <td></td>
+              <td class="right bold red">7,365,069</td>
+              <td class="right bold red">100.0</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    </div>
+    <div class="chart">
+      <canvas id="chart_2013"></canvas>
+      <div class="chartjs-tooltip" id="chartjs-tooltip_2013"></div>
+    </div>
+    <div class="legend">
+      <ul class="clearfix btnList">
+        <li class="自民党 on">自民党</li>
+        <li class="公明党 on">公明党</li>
+        <li class="日本維新の会">維新の会</li>
+        <li class="みんなの党 on">みんなの党</li>
+        <li class="民主党 on">民主党</li>
+        <li class="共産党">共産党</li>
+        <li class="社民党">社民党</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /#4. 2013 -->
+
+  <!-- #5. graph -->
+  <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <h1>政党別得票数推移</h1>
+      </article>
+    </div>
+    <div class="chart2">
+      <canvas id="chart_graph"></canvas>
+      <div class="chartjs-tooltip-graph" id="chartjs-tooltip_graph"></div>
+    </div>
+    <div class="legend">
+      <ul class="clearfix btnList">
+        <li class="自民党 pointer" id="btnList_1">自民党</li>
+        <li class="公明党 pointer" id="btnList_2">公明党</li>
+        <li class="日本維新の会 pointer" id="btnList_3">維新の会</li>
+        <li class="みんなの党 pointer" id="btnList_4">みんなの党</li>
+        <li class="民主党 pointer" id="btnList_5">民主党</li>
+        <li class="共産党 pointer" id="btnList_6">共産党</li>
+        <li class="社民党 pointer" id="btnList_7">社民党</li>
+      </ul>
+      <div class="clearfix bottom3 red">
+        政党名をクリックするとグラフ表示/非表示が切り替わります。
+      </div>
+    </div>
+  </div>
+  <!-- #5. /graph -->
+
+  <!-- #6. 任期 -->
+  <div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <h1>任期</h1>
+      </article>
+    </div>
+    <div class="chart2">
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1_vH6vyUYFoUjQ-cHP9D_cmaFwEAFHIXR8eVfrLM_MI0&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+    </div>
+  </div>
+  <!-- /#6. 任期 -->
+
+  <!-- #7. 2016 -->
+  <div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <h1 style="width:inherit;">2016(定数4)</h1>
+      </article>
+    </div>
+    <div class="accordion">
+      <ul>
+        <li>
+          <div> <a href="http://moriyokohama.web.fc2.com/" target="_blank">
+            <h2>森 ひでお (44)</h2>
+            <p class="white">1971年12月10日東京都出身。社民党<br />@mori_hideo_</p>
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="http://asakayuka.net/" target="_blank">
+            <h2>あさか 由香 (36)</h2>
+            <p class="white">1980年3月23日横浜市鶴見区出身。日本共産党<br />@asakayuka</p>
+
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="http://mayamayuichi.jp/" target="_blank">
+            <h2>真山 勇一 (72)</h2>
+            <p class="white">1944年1月8日東京墨田区出身。民進党<br />@MayamaMia</p>
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="http://www.guts-kaneko.com/" target="_blank">
+            <h2>かねこ 洋一 (53)</h2>
+            <p class="white">1962年6月28日神奈川県横浜市南区出身。民進党<br />@Y_Kaneko</p>
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="https://twitter.com/niwadainiwa" target="_blank">
+            <h2>丹羽 大 (39)</h2>
+            <p class="white">1977年2月17日名古屋市出身。おおさか維新の会<br />@niwadainiwa</p>
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="http://ameblo.jp/ikiaiko/" target="_blank">
+            <h2>いき 愛子 (30)</h2>
+            <p class="white">1985年9月14日神奈川県川崎市出身。幸福実現党<br />@ikiaiko</p>
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="http://www.nakanishikenji.jp/" target="_blank">
+            <h2>中西 けんじ (52)</h2>
+            <p class="white">1964年1月4日東京都出身。無所属（自民党）<br />@Kenji_Nakanishi</p>
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="https://miura-nobuhiro.com/" target="_blank">
+            <h2>三浦 のぶひろ (41)</h2>
+            <p class="white">1975年3月5日宮城県仙台市出身。公明党<br />@miura_nobuhiro</p>
+          </a> </div>
+        </li>
+        <li>
+          <div> <a href="http://www.miharajunco.org/" target="_blank">
+            <h2>三原 じゅん子 (51)</h2>
+            <p class="white">1964年9月13日東京都板橋区出身。自民党<br />@miharajunco</p>
+          </a> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /#7. 2016 -->
+
+  <!-- #8. table -->
+  <div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <!-- <h1>政策<br />比較</h1> -->
+      </article>
+    </div>
+    <div class="table">
+      <table class="table1">
+        <tr>
+          <td class="color_title">写真</td>
+          <td><img src="images/mori.jpg" class="icon"></td>
+          <td><img src="images/asaka.jpg" class="icon"></td>
+          <td class="color_minshin"><img src="images/mayama.jpg" class="icon"></td>
+          <td class="color_minshin"><img src="images/kaneko.jpg" class="icon"></td>
+          <td><img src="images/niwa.jpg" class="icon"></td>
+          <td><img src="images/iki.jpg" class="icon"></td>
+          <td class="color_jimin"><img src="images/nakanishi.jpg" class="icon"></td>
+          <td class="color_jimin"><img src="images/miura.jpg" class="icon"></td>
+          <td class="color_jimin"><img src="images/mihara.jpg" class="icon"></td>
+        </tr>
+        <tr>
+          <td class="color_title">氏名</td>
+          <td>森<br />ひでお</td>
+          <td>あさか<br />由香</td>
+          <td class="color_minshin">真山<br />勇一</td>
+          <td class="color_minshin">かねこ<br />洋一</td>
+          <td>丹羽<br />大</td>
+          <td>いき<br />愛子</td>
+          <td class="color_jimin">中西<br />けんじ</td>
+          <td class="color_jimin">三浦<br />のぶひろ</td>
+          <td class="color_jimin">三原<br />じゅん子</td>
+        </tr>
+        <tr>
+          <td class="color_title">年齢</td>
+          <td>44歳</td>
+          <td>36歳</td>
+          <td class="color_minshin">72歳</td>
+          <td class="color_minshin">53歳</td>
+          <td>39歳</td>
+          <td>30歳</td>
+          <td class="color_jimin">52歳</td>
+          <td class="color_jimin">41歳</td>
+          <td class="color_jimin">51歳</td>
+        </tr>
+        <tr>
+          <td class="color_title">サイト</td>
+          <td>
+            <a href="http://moriyokohama.web.fc2.com/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/mori_hideo_" target="_blank" class="link">tw</a>
+          </td>
+          <td>
+            <a href="http://asakayuka.net/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/asakayuka" target="_blank" class="link">tw</a>
+          </td>
+          <td class="color_minshin">
+            <a href="http://mayamayuichi.jp/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/MayamaMia" target="_blank" class="link">tw</a>
+          </td>
+          <td class="color_minshin">
+            <a href="http://www.guts-kaneko.com/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/Y_Kaneko" target="_blank" class="link">tw</a>
+          </td>
+          <td>
+            <a href="http://twitter.com/niwadainiwa" target="_blank" class="link">tw</a>
+          </td>
+          <td>
+            <a href="http://ameblo.jp/ikiaiko/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/ikiaiko" target="_blank" class="link">tw</a>
+          </td>
+          <td class="color_jimin">
+            <a href="http://www.nakanishikenji.jp/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/Kenji_Nakanishi" target="_blank" class="link">tw</a>
+          </td>
+          <td class="color_jimin">
+            <a href="https://miura-nobuhiro.com/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/miura_nobuhiro" target="_blank" class="link">tw</a>
+          </td>
+          <td class="color_jimin">
+            <a href="http://www.miharajunco.org/" target="_blank" class="link">hp</a>
+            <a href="http://twitter.com/miharajunco" target="_blank" class="link">tw</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="color_title">フォロワー</td>
+          <td>85</td>
+          <td>2,962</td>
+          <td class="color_minshin">4,924</td>
+          <td class="color_minshin">16,062</td>
+          <td>1,316</td>
+          <td>352</td>
+          <td class="color_jimin">7,402</td>
+          <td class="color_jimin">1,408</td>
+          <td class="color_jimin">51,879</td>
+        </tr>
+        <tr>
+          <td class="color_title">所属政党<br />(推薦)</td>
+          <td><a href="http://www5.sdp.or.jp/" target="_blank" class="link">社民党</a></td>
+          <td><a href="http://www.jcp.or.jp/" target="_blank" class="link">共産党</a></td>
+          <td class="color_minshin"><a href="https://www.minshin.jp/" target="_blank" class="link">民進党</a></td>
+          <td class="color_minshin"><a href="https://www.minshin.jp/" target="_blank" class="link">民進党</a></td>
+          <td><a href="https://o-ishin.jp/" target="_blank" class="link">おおさか<br />維新</a></td>
+          <td><a href="http://hr-party.jp/" target="_blank" class="link">幸福<br />実現党</a></td>
+          <td class="color_jimin">無所属<br />
+            (<a href="https://www.jimin.jp/" target="_blank" class="link">自民党</a>)
+          </td>
+          <td class="color_jimin">
+            <a href="https://www.komei.or.jp/" target="_blank" class="link">公明党</a><br />
+            (<a href="https://www.jimin.jp/" target="_blank" class="link">自民党</a>)
+          </td>
+          <td class="color_jimin"><a href="https://www.jimin.jp/" target="_blank" class="link">自民党</a></td>
+        </tr>
+        <tr>
+          <td class="color_title">キヤッチ<br />コピー</td>
+          <td class="f12">人の生業こそ本物の経済</td>
+          <td class="f12">8時間働けばふつうに暮らせる社会へ</td>
+          <td class="f12 color_minshin">ニュースの力でまっすぐな政治</td>
+          <td class="f12 color_minshin">消費税再増税をとめよう</td>
+          <td class="f12">既存常識に囚われない新しい人材</td>
+          <td class="f12">いつもイキイキ</td>
+          <td class="f12 color_jimin">活力のある日本へ</td>
+          <td class="f12 color_jimin">ニッポンの先進技術が未来をつくる</td>
+          <td class="f12 color_jimin">希望を生み出す強い経済</td>
+        </tr>
+        <tr>
+          <td class="color_title">増税</td>
+          <td class="hantai"><a href="./images/mori_1.png" class="preview link">反対</a></td>
+          <td class="hantai"><a href="./images/asaka_1.png" class="preview link">反対</a></td>
+          <td class="color_minshin hantai"><a href="./images/mayama_1.png" class="preview link">反対</a></td>
+          <td class="color_minshin hantai"><a href="./images/kaneko_1.png" class="preview link">反対</a></td>
+          <td class="hantai"><a href="./images/niwa_1.png" class="preview link">反対</a></td>
+          <td class="hantai"><a href="./images/iki_1.png" class="preview link">反対</a></td>
+          <td class="color_jimin sansei"><a href="./images/nakanishi_1.png" class="preview link">反対</a></td>
+          <td class="color_jimin sansei"><a href="./images/miura_1.png" class="preview link red2">賛成</a></td>
+          <td class="color_jimin sansei"><a href="./images/mihara_1.png" class="preview link red2">賛成</a></td>
+        </tr>
+        <tr>
+          <td class="color_title">安保</td>
+          <td class="hantai"><a href="./images/mori_2.png" class="preview link">反対</a></td>
+          <td class="hantai"><a href="./images/asaka_2.png" class="preview link">反対</a></td>
+          <td class="color_minshin hantai"><a href="./images/mayama_2.png" class="preview link">反対</a></td>
+          <td class="color_minshin hantai"><a href="./images/kaneko_2.png" class="preview link">反対</a></td>
+          <td class="sansei"><a href="./images/niwa_2.png" class="preview link" style="color:grey">留保</a></td>
+          <td class="sansei"><a href="./images/iki_2.png" class="preview link red2">賛成</a></td>
+          <td class="color_jimin sansei"><a href="./images/nakanishi_2.png" class="preview link red2">賛成</a></td>
+          <td class="color_jimin sansei"><a href="./images/miura_2.png" class="preview link red2">賛成</a></td>
+          <td class="color_jimin sansei"><a href="./images/mihara_2.png" class="preview link red2">賛成</a></td>
+        </tr>
+        <tr>
+          <td class="color_title">原発</td>
+          <td class="hantai"><a href="./images/mori_3.png" class="preview link">反対</a></td>
+          <td class="hantai"><a href="./images/asaka_3.png" class="preview link">反対</a></td>
+          <td class="color_minshin hantai"><a href="./images/mayama_3.png" class="preview link">反対</a></td>
+          <td class="color_minshin hantai"><a href="./images/kaneko_3.png" class="preview link">反対</a></td>
+          <td class="sansei"><a href="./images/niwa_3.png" class="preview link">反対</a></td>
+          <td class="sansei"><a href="./images/iki_3.png" class="preview link red2">賛成</a></td>
+          <td class="color_jimin sansei"><a href="./images/nakanishi_3.png" class="preview link">反対</a></td>
+          <td class="color_jimin sansei"><a href="./images/miura_3.png" class="preview link">反対</a></td>
+          <td class="color_jimin sansei"><a href="./images/mihara_3.png" class="preview link red2">賛成</a></td>
+        </tr>
+        <tr>
+          <td class="color_title">備考</td>
+          <td>
+            <a href="./images/mori_gikai.png" class="preview link f10">神奈川県議会</a><br />
+            <a href="./images/mori_kotobuki.jpg" class="preview link f10">寿町支援</a>
+          </td>
+          <td>
+            <a href="./images/asaka_gikai.png" class="preview link f10">神奈川県議会</a><br />
+            <a href="https://interview_asakayuka.atavist.com/#chapter-851438" target="_blank" class="link f10">インタビュー</a>
+          </td>
+          <td class="color_minshin">
+            <a href="http://blogos.com/article/75554/" target="_blank" class="link f10">特定秘密保護法</a>
+          </td>
+          <td class="color_minshin">
+            <a href="./images/kaneko_kyosan.png" class="preview link f10">共産党観</a><br />
+            <a href="./images/kaneko_china.png" class="preview link f10">中国観</a>
+          </td>
+          <td>
+            <a href="http://kagerou-kazoku.com/dai-niwa" target="_blank" class="link f10">インタビュー</a>
+          </td>
+          <td>
+            <a href="http://hrp-newsfile.jp/2014/1648/" target="_blank" class="link f10">歴史観</a>
+          </td>
+          <td class="color_jimin"></td>
+          <td class="color_jimin"></td>
+          <td class="color_jimin">
+            <a href="https://www.youtube.com/watch?v=TCtwwOw-ByI" target="_blank" class="link f10">八紘一宇</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--
+    <div class="clearfix bottom4 red">
+      <ul>
+        <li>※ 賛成/反対をマウスオーバーすると、関連するコメントが表示されます。</li>
+        <li>※ 本人によるコメントが見つからなかった場合、所属政党のコメントを表示しています。</li>
+      </ul>
+    </div>
+    -->
+  </div>
+  <!-- /#8. chart -->
+
+  <!-- #9. people -->
+  <div class="slide" id="slide9" data-slide="9" data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <!-- <h1>政策<br />比較</h1> -->
+      </article>
+    </div>
+    <div class="center">
+      <img src="images/people.png" class="100vh" id="people">
+    </div>
+  </div>
+  <!-- /#9. chart -->
+
+  <!-- #10. tweets -->
+  <div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0">
+    <div class="desc">
+      <article>
+        <!-- <h1><br />TWEETS</h1> -->
+      </article>
+    </div>
+    <div class="full2">
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/mori_hideo_" height="100%" style="height:100%" data-widget-id="727707317811224577">@mori_hideo_さんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/asakayuka" height="100%" style="height:100%" data-widget-id="727706482549075969">@asakayukaさんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/MayamaMia" height="100%" style="height:100%" data-widget-id="727705830150262784">@MayamaMiaさんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/Y_Kaneko" height="100%" style="height:100%" data-widget-id="727702578339799040">@Y_Kanekoさんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/niwadainiwa" height="100%" style="height:100%" data-widget-id="727707035941351424">@niwadainiwaさんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/ikiaiko" height="100%" style="height:100%" data-widget-id="727707646187454465">@ikiaikoさんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/Kenji_Nakanishi" height="100%" style="height:100%" data-widget-id="727709020346302465">@Kenji_Nakanishiさんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/miura_nobuhiro" height="100%" style="height:100%" data-widget-id="727706260594929664">@miura_nobuhiroさんのツイート</a>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/miharajunco" height="100%" style="height:100%" data-widget-id="727701165916332036">@miharajuncoさんのツイート</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+  </div>
+  <!-- /#9. tweets -->
+
+  <!-- #10. vote -->
+  <div class="slide" id="slide11" data-slide="11" data-stellar-background-ratio="0">
+  </div>
+  <!-- /#10. vote -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-44492700-2', 'auto');
+  ga('send', 'pageview');
+  (function($){
+    hsize = $(window).height();
+    $("#people").css("height", hsize + "px");
+    $('.preview').imgPreview({
+      imgCSS: { width: 400 }
+    });
+  })(jQuery);
+  </script>
+
+</body>
+</html>
